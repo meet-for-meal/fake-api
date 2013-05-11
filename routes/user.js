@@ -5,12 +5,16 @@
 
 exports.list = function(req, res){
   res.jsonp([{
+    id: 1,
     firstname: 'Rémy',
     lastname: 'Funky',
-    username: 'rhannequin'
+    username: 'rhannequin',
+    created_at: new Date(2013, 5, 11, 12, 0, 0)
   }, {
-    fistname: 'Hervé',
+    id: 2,
+    firstname: 'Hervé',
     lastname: 'Jagbomb',
-    username: 'jagbomb'
+    username: 'jagbomb',
+    created_at: new Date(2013, 5, 11, 14, 30, 0)
   }]);
 };
