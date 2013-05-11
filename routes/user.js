@@ -18,3 +18,17 @@ exports.list = function(req, res){
     created_at: new Date(2013, 5, 11, 14, 30, 0)
   }]);
 };
+
+exports.edit = function(req, res){
+  res.jsonp({
+    id: 1,
+    firstname: 'Rémy',
+    lastname: 'Funky',
+    username: 'rhannequin',
+    created_at: new Date(2013, 5, 11, 12, 0, 0)
+  });
+};
+
+exports.update = function(req, res){
+  res.jsonp({});
+};
