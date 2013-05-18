@@ -19,7 +19,7 @@ exports.list = function(req, res){
   }]);
 };
 
-exports.edit = function(req, res){
+exports.show = function(req, res){
   res.jsonp({
     id: 1,
     firstname: 'Rémy',
