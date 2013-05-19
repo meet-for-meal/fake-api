@@ -20,3 +20,7 @@ exports.show = function(req, res){
     created_at: new Date(2013, 5, 11, 12, 0, 0)
   });
 };
+
+exports.update = function(req, res){
+  res.jsonp({ status: 'ok' });
+};

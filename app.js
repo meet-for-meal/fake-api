@@ -34,6 +34,7 @@ app.get('/users/:id', user.show);
 app.get('/users/edit/:id', user.update);
 app.get('/venues', venue.list);
 app.get('/venues/:id', venue.show);
+app.get('/venues/edit/:id', venue.update);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
